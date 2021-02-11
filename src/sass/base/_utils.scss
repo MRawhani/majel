@@ -1,0 +1,143 @@
+.white-color {
+	color: white !important;
+
+}
+
+.color-Primary {
+	color: $main-color;
+}
+
+.bg-primary {
+	background-color: $main-color !important;
+	transition: all .3s !important;
+	box-sizing: border-box;
+	border: 1px solid transparent !important;
+	border-radius: 10px;
+
+	&:hover {
+		background-color: white !important;
+		border: 1px solid $main-color !important;
+		color: $main-color !important;
+
+	}
+}
+
+.bg-outlined {
+	background-color: $main-color !important;
+	transition: all .3s !important;
+	box-sizing: border-box;
+	border: 1px solid transparent !important;
+	border-radius: 10px;
+
+}
+
+.bg-outlined-btn {
+	background-color: transparent !important;
+	border: 1px solid $main-color !important;
+	color: $main-color !important;
+	transition: all .3s !important;
+	box-sizing: border-box;
+	border-radius: 10px;
+
+	&:hover {
+		background-color: $main-color !important;
+		border: 1px solid transparent !important;
+
+		color: white !important;
+
+	}
+}
+
+.MuiSvgIcon-root {
+	font-size: 1.8rem !important;
+}
+
+.MuiListItemIcon-root {
+	min-width: 3.5rem !important;
+}
+
+.MuiMenuItem-root {
+	font-family: 'Noto Kufi Arabic', sans-serif !important;
+
+}
+
+.MuiIconButton-root:hover {
+	background-color: transparentm !important;
+}
+
+.MuiListItem-root {
+	text-align: right !important;
+}
+
+.MuiDrawer-paperAnchorRight {
+
+	@include respond(sm) {
+		width: auto;
+	}
+}
+
+.MuiButton-startIcon {
+	margin-left: 5px !important;
+	margin-right: -8px !important;
+}
+
+.fontFamily {
+	font-family: 'Noto Kufi Arabic', sans-serif !important;
+}
+
+.MuiInputLabel-formControl {
+	right: 0;
+}
+
+.checkBox {
+	left: 16px;
+	right: auto !important;
+}
+
+.MuiFormControlLabel-root {
+
+	margin-right: -11px !important;
+	margin-left: 16px !important;
+
+	& span {
+		font-family: 'Noto Kufi Arabic', sans-serif !important;
+		font-size: 15px;
+	}
+
+}
+
+.MuiRadio-colorSecondary.Mui-checked {
+	color: $main-color !important;
+}
+
+.signin_wrapper{
+	width: 40%;
+    margin: 50px auto;
+    background: #ecebeb73;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 15px #00000049;
+}
+.bookingBox{
+	padding: 10px;
+    background: #f1efeff3;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+	margin: 10px 0;
+	& h1{
+margin: 0;
+	}
+	h4{
+
+	}
+	& btn{
+		color: rgb(90, 108, 116) !important;
+		text-decoration: underline;
+	}
+}
+
+.MuiButton-label{
+	font-family: 'Cairo';
+}
