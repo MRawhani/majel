@@ -50,7 +50,12 @@ function BookingPage(props) {
       });
   };
   const { productDetail } = props.products;
-
+   getAddress= ()=>{
+  const address =   props.general.addresses ? props.general.addresses.find(
+      (e) => e._id === bookingData.address
+    ):null
+    return address? address.street : ''
+  }
   return (
     <div>
       <PageTop title="حجز طلب " />
@@ -128,10 +133,7 @@ function BookingPage(props) {
             <div className="totals-item">
               <label>العنوان</label>
               <div className="totals-value" id="cart-subtotal">
-                {props.general.addresses &&
-                  props.general.addresses.find(
-                    (e) => e._id === bookingData.address
-                  ).street}
+                {getAddress()}
               </div>
             </div>
             <div className="totals-item">
